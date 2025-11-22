@@ -21,22 +21,20 @@ Classes I wrote:
 Constructor: ```new(List<UserCredentials> users)```
 
 
-
 ### Parameters:
 
 users: the database you want to look through
 
 
 
-Variables:
-
+### Variables:
 
 
 bool loggedIn: stores the if loginAttempt was successful
 
 string currentUser: stores the current logged in user
 
-Functions:
+### Functions:
 
 
 
@@ -70,7 +68,7 @@ data: default of null, the data you want to write
 
 
 
-Variables:
+### Variables:
 
 
 
@@ -81,7 +79,7 @@ string path: path location
 dynamic data: any type of data you want to write
 
 
-Functions:
+### Functions:
 readFile- reads and returns the output of a file
 
 writeFile - deletes the file and writes the input you want

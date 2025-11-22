@@ -31,15 +31,15 @@ class Program
         
         List<UserCredentials> __users = JsonConvert.DeserializeObject<List<UserCredentials>>(fileManager.readFile());
         
-        HandleAuthentication currentUser = new HandleAuthentication(__users);
-        Console.Write(currentUser.registerAttempt("user67", "password") + "\n");
-        Console.Write(currentUser.registerAttempt("user56", "password") + "\n");
-        Console.Write(currentUser.registerAttempt("user13", "password") + "\n");
-        Console.Write(currentUser.registerAttempt("user61", "password") + "\n");
+        HandleAuthentication session = new HandleAuthentication(__users);
+        Console.Write(session.registerAttempt("user67", "password") + "\n");
+        Console.Write(session.registerAttempt("user56", "password") + "\n");
+        Console.Write(session.registerAttempt("user13", "password") + "\n");
+        Console.Write(session.registerAttempt("user61", "password") + "\n");
 
-        Console.Write($"login attempt: {currentUser.loginAttempt("user61", "password")} and {currentUser.loggedIn} \n");
+        Console.Write($"login attempt: {session.loginAttempt("user61", "password")} and {session.loggedIn} \n");
 
-        foreach (var user in currentUser.users)
+        foreach (var user in session.users)
         {
             Console.WriteLine($"{user.Username}: {user.Password}\n");   
         }

@@ -16,7 +16,7 @@ Classes I wrote:
 
 
 
-###HandleAuthenticator
+*HandleAuthenticator*
 
 Constructor: ```new(List<UserCredentials> users)```
 
@@ -54,7 +54,7 @@ registerAttempt - check if the user doesn’t exist, if it doesn’t exist creat
 
 
 
-###FileManager
+*FileManager*
 
 Constructor: ```new(string file, string path, dynamic ?data = null)```
 

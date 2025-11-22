@@ -16,13 +16,13 @@ Classes I wrote:
 
 
 
-*HandleAuthenticator*
+## HandleAuthenticator
 
 Constructor: ```new(List<UserCredentials> users)```
 
 
 
-Parameters:
+### Parameters:
 
 users: the database you want to look through
 
@@ -54,13 +54,13 @@ registerAttempt - check if the user doesn’t exist, if it doesn’t exist creat
 
 
 
-*FileManager*
+## FileManager
 
 Constructor: ```new(string file, string path, dynamic ?data = null)```
 
 
 
-Parameters:
+### Parameters:
 
 file: the file you want to write or read to
 

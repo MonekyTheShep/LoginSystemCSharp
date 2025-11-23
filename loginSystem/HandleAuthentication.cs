@@ -31,7 +31,7 @@ namespace loginSystem
           }       
         }
 
-        if (userExists == false)
+        if (!userExists)
         {
           var hashedPassword = passwordHasher.HashPassword(_password);
           users.Add(new UserCredentials { Username = _user, Password = hashedPassword }); 

@@ -23,6 +23,7 @@ Find a way to make it so i can translate any dataset type inside of the List<Use
 
 ## HandleAuthenticator
 
+HandleAuthenticator takes user datasets as a List through the UserCredentials Object. This should allow me to convert any dataset into the list allowing for multiple ways to authenticate.
 Constructor: ```new(List<UserCredentials> users)```
 
 
@@ -57,6 +58,8 @@ Constructor: ```new(List<UserCredentials> users)```
 
 
 ## FileManager
+
+Basic FileIO functions through parameters
 
 Constructor: ```new(string file, string path, dynamic ?data = null)```
 

@@ -11,6 +11,7 @@ Input Sanitastion
 Menu
 Make a abstract class for database handling
 Find a way to make it so i can translate any dataset type inside of the List<UserCredentials>
+Change List<UserCredentials> which has a Big O of o(n) to a dictionary with o(1)
 ```
 
 

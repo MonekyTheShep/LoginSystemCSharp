@@ -44,9 +44,9 @@ Constructor: ```new(List<UserCredentials> users)```
 ### Functions:
 
 
-```loginAttempt``` - check if the username and password are correct
+```loginAttempt``` - check if the username and password are correct. returns true for success
 
-```registerAttempt``` - check if the user doesn’t exist, if it doesn’t exist create it in the user list
+```registerAttempt``` - check if the user doesn’t exist, if it doesn’t exist create it in the user list. returns true for success
 
  
 

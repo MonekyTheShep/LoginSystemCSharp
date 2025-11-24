@@ -45,9 +45,9 @@ Constructor: ```new(List<UserCredentials> users)```
 ### Functions:
 
 
-```loginAttempt``` - check if the username and password are correct. returns true for success
+```bool loginAttempt``` - check if the username and password are correct. returns true for success
 
-```registerAttempt``` - check if the user doesn’t exist, if it doesn’t exist create it in the user list. returns true for success
+```bool registerAttempt``` - check if the user doesn’t exist, if it doesn’t exist create it in the user list. returns true for success
 
  
 
@@ -90,9 +90,9 @@ Constructor: ```new(string file, string path, dynamic ?data = null)```
 
 ### Functions:
 
-```readFile```- reads and returns the output of a file
+```string readFile```- reads and returns the output of a file
 
-```writeFile``` - deletes the file and writes the input you want
+```void writeFile``` - deletes the file and writes the input you want
 
 
 

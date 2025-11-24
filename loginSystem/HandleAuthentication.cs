@@ -3,7 +3,9 @@ namespace loginSystem
 {
   public class HandleAuthentication
     {
+      // i want to make it so you can use any dataset in this
       // add which user in the database your logged into later
+      // remove repetitive code
 
       public List<UserCredentials> users = new List<UserCredentials>{};
       public bool loggedIn = false;
@@ -68,6 +70,12 @@ namespace loginSystem
                 }
           }
         return false;
+      }
+
+      public void logout()
+      {
+        currentUser = "";
+        loggedIn = false;     
       }
       
     } 

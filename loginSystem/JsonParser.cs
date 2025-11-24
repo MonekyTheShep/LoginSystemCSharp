@@ -21,7 +21,7 @@ class JsonParser
 
     public dynamic serializeJson()
     {
-        return JsonConvert.SerializeObject(data);
+        return JsonConvert.SerializeObject(data, Formatting.Indented);
     }
   }
 }

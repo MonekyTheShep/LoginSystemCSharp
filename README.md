@@ -28,7 +28,6 @@ HandleAuthentication session = new HandleAuthentication(__users);
 Console.Write(session.registerAttempt("user", "password") + "\n"); // True 
 Console.Write(session.loginAttempt("user", "password") + "\n"); // True 
 
-
 ```
 
 # Classes I wrote:

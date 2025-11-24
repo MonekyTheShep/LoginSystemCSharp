@@ -20,7 +20,7 @@ class Menu
 
         while (!correctInput) {
             
-            string input = Console.ReadLine();
+            string ?input = Console.ReadLine();
             if (input != null){
                 return input;        
             }

@@ -25,8 +25,8 @@ class Program
         // fileManager.writeFile();
 
         // will use to store data in mongodb
-        IDatabaseHandling database = new HandleMongoDB("");
-        database.connect();
+        //IDatabaseHandling database = new HandleMongoDB("", "", "");
+        //database.connect();
 
         // test reading of json from file to list and writing
         FileManager fileManager = new FileManager("data.json", Directory.GetCurrentDirectory());
@@ -48,12 +48,28 @@ class Program
         Console.Write(session.registerAttempt("user13", "password") + "\n");
         Console.Write(session.registerAttempt("user61", "password") + "\n");
         // test login 
-        Console.Write($"login attempt: {session.loginAttempt("user67", "password")}\nLogged in: {session.loggedIn}\nCurrent User: {session.currentUser} \n");
+        
+        Console.WriteLine("Login?");
+        var loginInput = Console.ReadLine();
+
+        if (loginInput == "yes")
+        {
+            Console.WriteLine("Username?");
+            var username = Console.ReadLine();
+            Console.WriteLine("Password?");
+            var password = Console.ReadLine();
+        
+            session.loginAttempt(username, password);
+            Console.Write($"Logged in: {session.loggedIn}\nCurrent User: {session.currentUser} \n");
+        }
+        //Console.Write($"login attempt: {session.loginAttempt("user67", "password")}\nLogged in: {session.loggedIn}\nCurrent User: {session.currentUser} \n");
 
         foreach (var user in session.users)
         {
             Console.WriteLine($"{user.Username}: {user.Password}\n");   
         }
+
+
         Console.WriteLine("Logout?");
         var input = Console.ReadLine();
         if (input == "yes")

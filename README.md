@@ -20,7 +20,7 @@ Learn LINQ
 
 # Example usage
 
-```
+```cs
 // initialise the file manager and read the existing data from json file
 FileManager fileManager = new FileManager("data.json", Directory.GetCurrentDirectory());
 var jsonData = JsonConvert.DeserializeObject<List<UserCredentials>>(fileManager.readFile());

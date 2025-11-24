@@ -2,6 +2,7 @@
 A login system using JSON files to store user data.
 Has the Argon2 hashing algorithm for password hashing.
 
+Wrote this in 3 days 😔 god save me. 
 Basic FileManager and JsonParser
 
 
